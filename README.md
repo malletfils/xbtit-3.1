@@ -15,7 +15,7 @@ xbtit is a complete rewrite of our BtiTracker base code. Every file has been cha
 
 To upgrade your modified Btit 1.4.x to xbtit it is necessary to upgrade your current db using upgrade.php (not included in the standard package) and then reapply your hacks to the new xbtit code. Although xbtit has a hack template system designed to make the application of hacks easy, none of our 1.4.x hacks have yet been packaged for xbtit, these will arrive in time as the community adopts the new code
 
-xbtit has two bittorrent tracker systems - a PHP tracker and xbtt. The PHP tracker is designed for platforms without access to the system root, or where your tracker is not expected to run with greater than 5-10,000 peers. A PHP tracker can generate a high volume of TCP traffic, potentially millions of hits per day on port 80, you have been cautioned. The second tracker system is xbtt by Olaf van der Spek. xbtt is an efficient C++ tracker capable of running millions of peers at very low overhead, you are recommended in all cases to use the xbtt system
+xbtit has two bittorrent tracker systems - a PHP tracker and xbt. The PHP tracker is designed for platforms without access to the system root, or where your tracker is not expected to run with greater than 5-10,000 peers. A PHP tracker can generate a high volume of TCP traffic, potentially millions of hits per day on port 80, you have been cautioned. The second tracker system is xbtt by Olaf van der Spek. xbtt is an efficient C++ tracker capable of running millions of peers at very low overhead, you are recommended in all cases to use the xbtt system
 
 The opensource free support forum is
 BTITeam http://www.btiteam.eu
@@ -24,7 +24,7 @@ BTITeam http://www.btiteam.eu
 
 - real template system, 99% of the html code is out for the PHP files using bTemplate http://www.massassi.com/bTemplate/
 - rewritten (optimized) announce.php (the PHP tracker)
-- integrated optional xbtt backend by Olaf Van der Spek https://github.com/OlafvdSpek/xbt
+- integrated optional xbt backend by Olaf Van der Spek https://github.com/OlafvdSpek/xbt
 - support for external mail server using phpmailer http://sourceforge.net/projects/phpmailer
 - rewritten internal forum with subforum support
 - integrated optional smf forum (big thanks to petr1fied) http://www.simplemachines.org/
@@ -44,8 +44,8 @@ BTITeam http://www.btiteam.eu
 ## <a name="requirements"></a> :white_check_mark: Requirements
 
 - Web server with Apache or Lighttp installed and running
-- PHP 7.2 (If you use php 4, you'll have to rename the phpmailer's folder phpmailer->phpmailer5 and phpmailer4->phpmailer)
-- MySQL 5.6 or 5.7
+- PHP 7.1 to 7.4(If you use php 4, you'll have to rename the phpmailer's folder phpmailer->phpmailer5 and phpmailer4->phpmailer)
+- MariaDB 10.1 or better
 
 ## <a name="credits"></a> :muscle: Credits
 
@@ -58,7 +58,7 @@ We aimed to make a nice user interface and a good admin tool at the same time. S
 - torrenttrader (http://www.torrentrader.org - dead)
 - bytemoonsoon (deadlink)
 - Tbdev: CoLdFuSiOn (http://www.tbdev.net - dead)
-- xbtt: Olaf van der Spek (https://github.com/OlafvdSpek/xbt)
+- xbt: Olaf van der Spek (https://github.com/OlafvdSpek/xbt)
 - phpmailer (http://sourceforge.net/projects/phpmailer)
 - smf (http://www.simplemachines.org/)
 - bTemplate: Brian Lozier (http://www.massassi.com/bTemplate)
