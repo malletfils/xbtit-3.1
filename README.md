@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="https://i.imgur.com/f9sGMg2.png" alt="Banner">
-    <a href="https://github.styleci.io/repos/158478792"><img src="https://github.styleci.io/repos/158478792/shield?branch=master" alt="StyleCI"></a>
+    <img src="https://btiteam.eu/img" alt="Banner">
+    <a href="https://btiteam.eu"></a>
 </p>
 <hr>
 
