@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://btiteam.eu/img" alt="Banner">
+    <img src="https://btiteam.eu/img/xbtit.png" alt="Banner">
     <a href="https://btiteam.eu"></a>
 </p>
 <hr>
