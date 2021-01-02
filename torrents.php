@@ -100,12 +100,13 @@ if ($category[0] > 0) {
 if (isset($_GET['search'])) {
     $testocercato = trim($_GET['search']);
     $testocercato = explode(' ', $testocercato);
-    if ($_GET['search'] != '') {
+    $query_select=''; 
+   if ($_GET['search'] != '') {
         $search = 'search='.implode('+', $testocercato);
     }
     for ($k = 0; $k < count($testocercato); $k++) {
         if (isset($query_select)) {
-            $query_select .= " filename LIKE '%".mysqli_query($GLOBALS['conn'], $testocercato[$k])."%'";
+            $query_select .= " filename LIKE '%".mysqli_real_escape_string($GLOBALS['conn'], $testocercato[$k])."%'";
         }
         if ($k < count($testocercato) - 1) {
             $query_select .= ' AND ';
